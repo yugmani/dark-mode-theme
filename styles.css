@@ -1,0 +1,98 @@
+body {
+  background: #f2f2f2;
+  font-family: "Lato", Helvetica, sans-serif;
+}
+
+.menu {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  float: right;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: navy;
+}
+
+.title {
+  /* margin-bottom: 20px;
+  margin-top: 20px; */
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.content {
+  clear: both;
+  margin-top: 25px;
+}
+
+img {
+  margin-top: 25px;
+  width: 100%;
+  height: 350px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* DARK / LIGHT MODE TOGGLING STYLE */
+
+body.dark {
+  background: #5436;
+  color: whitesmoke;
+}
+
+.darkModeSwitch {
+  background-color: #3494b1;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 1.3rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.darkModeSwitch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  color: #fff;
+  background: none;
+}
+
+.darkModeSwitch::after {
+  display: block;
+  background: #fffbf5;
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 3rem;
+  transition: all 0.5s ease;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+  content: "";
+  justify-self: center;
+}
+
+.darkModeSwitch.active {
+  background: #fdd384;
+}
+
+.darkModeSwitch.active::after {
+  left: unset;
+  right: 0;
+}
